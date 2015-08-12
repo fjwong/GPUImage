@@ -27,6 +27,10 @@
 		192E15061B7AE99A00959748 /* GPUImageEightInputFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 192E15021B7AE99A00959748 /* GPUImageEightInputFilter.m */; };
 		192E15071B7AE99A00959748 /* GPUImageFourInputFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 192E15031B7AE99A00959748 /* GPUImageFourInputFilter.h */; };
 		192E15081B7AE99A00959748 /* GPUImageFourInputFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 192E15041B7AE99A00959748 /* GPUImageFourInputFilter.m */; };
+		192E155F1B7B3D1700959748 /* GPUImageEightInputFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 192E15021B7AE99A00959748 /* GPUImageEightInputFilter.m */; };
+		192E15601B7B3D1A00959748 /* GPUImageEightInputFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 192E15011B7AE99A00959748 /* GPUImageEightInputFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		192E15611B7B3D2600959748 /* GPUImageFourInputFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 192E15041B7AE99A00959748 /* GPUImageFourInputFilter.m */; };
+		192E15621B7B3D2F00959748 /* GPUImageFourInputFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 192E15031B7AE99A00959748 /* GPUImageFourInputFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4308B1D715F7EED30014437A /* GPUImageNormalBlendFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 4308B1D515F7EED10014437A /* GPUImageNormalBlendFilter.h */; };
 		4308B1D815F7EED30014437A /* GPUImageNormalBlendFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4308B1D615F7EED20014437A /* GPUImageNormalBlendFilter.m */; };
 		4686952F155AACAC0060BA43 /* GPUImageSourceOverBlendFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 4686952D155AACAC0060BA43 /* GPUImageSourceOverBlendFilter.h */; };
@@ -1574,6 +1578,7 @@
 				BCD81EB1194404EB007133DB /* GPUImageGrayscaleFilter.h in Headers */,
 				BCD81EB2194404EB007133DB /* GPUImageLuminanceThresholdFilter.h in Headers */,
 				BCD81EB3194404EB007133DB /* GPUImageAdaptiveThresholdFilter.h in Headers */,
+				192E15601B7B3D1A00959748 /* GPUImageEightInputFilter.h in Headers */,
 				BCD81EB4194404EB007133DB /* GPUImageAverageLuminanceThresholdFilter.h in Headers */,
 				BCD81EB5194404EB007133DB /* GPUImageHistogramFilter.h in Headers */,
 				BCD81EB6194404EB007133DB /* GPUImageHistogramGenerator.h in Headers */,
@@ -1637,6 +1642,7 @@
 				BCD81EF0194404EF007133DB /* GPUImageParallelCoordinateLineTransformFilter.h in Headers */,
 				BCD81EF1194404EF007133DB /* GPUImageLineGenerator.h in Headers */,
 				BCD81EF2194404F0007133DB /* GPUImageMotionBlurFilter.h in Headers */,
+				192E15621B7B3D2F00959748 /* GPUImageFourInputFilter.h in Headers */,
 				BCD81EF3194404F0007133DB /* GPUImageZoomBlurFilter.h in Headers */,
 				BCD81EF4194404F0007133DB /* GPUImageiOSBlurFilter.h in Headers */,
 				BCD81EF5194404F0007133DB /* GPUImageSourceOverBlendFilter.h in Headers */,
@@ -1918,7 +1924,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastTestingUpgradeCheck = 0510;
-				LastUpgradeCheck = 0600;
+				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = "Brad Larson";
 				TargetAttributes = {
 					BCE209E41943F20C002FEED8 = {
@@ -2009,6 +2015,7 @@
 				BCD81F4B19440604007133DB /* GPUImageRGBFilter.m in Sources */,
 				BCD81F4C19440604007133DB /* GPUImageHSBFilter.m in Sources */,
 				BCD81F4D19440604007133DB /* GPUImageHueFilter.m in Sources */,
+				192E15611B7B3D2600959748 /* GPUImageFourInputFilter.m in Sources */,
 				BCD81F4E19440604007133DB /* GPUImageMonochromeFilter.m in Sources */,
 				BCD81F4F19440604007133DB /* GPUImageFalseColorFilter.m in Sources */,
 				BCD81F5019440604007133DB /* GPUImageHazeFilter.m in Sources */,
@@ -2025,6 +2032,7 @@
 				BCD81F5B19440604007133DB /* GPUImageLookupFilter.m in Sources */,
 				BCD81F5C19440604007133DB /* GPUImageAmatorkaFilter.m in Sources */,
 				BCD81F5D19440604007133DB /* GPUImageMissEtikateFilter.m in Sources */,
+				192E155F1B7B3D1700959748 /* GPUImageEightInputFilter.m in Sources */,
 				BCD81F5E19440604007133DB /* GPUImageSoftEleganceFilter.m in Sources */,
 				BCD81F5F19440604007133DB /* GPUImageOpacityFilter.m in Sources */,
 				BCD81F6019440604007133DB /* GPUImageAverageColor.m in Sources */,
@@ -2415,6 +2423,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -2454,6 +2463,7 @@
 				COPY_PHASE_STRIP = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
