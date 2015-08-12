@@ -152,6 +152,8 @@
 #import <GPUImage/GPUImageWeakPixelInclusionFilter.h>
 #import <GPUImage/GPUImageNonMaximumSuppressionFilter.h>
 #import <GPUImage/GPUImageSourceOverBlendFilter.h>
+#import <GPUImage/GPUImageFourInputFilter.h>
+#import <GPUImage/GPUImageEightInputFilter.h>
 
 // Outputs
 #import <GPUImage/GPUImageView.h>
